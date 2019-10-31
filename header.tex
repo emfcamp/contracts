@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{pdflscape}
 \usepackage{xhfill}
+\usepackage{xspace}
 \usepackage{tabu}
 \usepackage{pdfpages}
 \usepackage[margin=2.5cm]{geometry}
@@ -28,8 +29,12 @@
 \chead{}
 \lhead{}
 
-\newcommand*{\SignatureAndDate}[1]{
-    \vspace{1in}
+\def\eventyear{2020\xspace}
+\def\eventdates{July 24th--26th \eventyear}
+
+\def\sponsorticketsdeadline{Friday July 10th, \eventyear}
+
+\newcommand*{\SignatureAndDate}[1]{\vspace{1in}
     \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
     \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Date}
 }
